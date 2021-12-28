@@ -1,5 +1,5 @@
 {
-   "name": "TMS-course-project",
+   "name": "tms-course-project",
    "source": "./src/index.html",
    "scripts": {
       "start": "parcel",

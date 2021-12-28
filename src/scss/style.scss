@@ -1,1 +1,37 @@
-@import './variables.scss'
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500;600;700&display=swap');
+
+*, *::before, *::after {
+   box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+}
+
+
+.header-container {
+   .first-header-wrapper {
+      background-color: rgba(17, 17, 19, 1);
+      display: flex;
+
+      .currency {
+         display: flex;
+
+         .currency-text {
+            font-family: "Barlow", sans-serif;
+            font-weight: 300;
+            color: $simple-text;
+            font-size: 12px;
+            line-height: 16px;
+         }
+
+         .country-text {
+            font-family: "Barlow", sans-serif;
+            font-weight: 300;
+            color: $simple-text;
+            font-size: 12px;
+            line-height: 16px;
+         }
+      }
+   }
+}
