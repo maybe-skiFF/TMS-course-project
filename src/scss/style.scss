@@ -26,14 +26,16 @@
 }
 
 .header-container {
-   height: 20vh;
+   display: flex;
+   flex-direction: column;
 
    .first-header-wrapper {
       background-color: rgba(17, 17, 19, 1);
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 37px;
+      width: auto;
 
       p {
          cursor: pointer;
@@ -57,7 +59,7 @@
    }
 
    .second-header-wrapper {
-      display: flex;
+      display: inline-flex;
       justify-content: space-between;
       border-bottom: 1px solid rgba(242, 242, 242, 1);
 
@@ -74,7 +76,6 @@
          display: flex;
          align-items: center;
          gap: 48px;
-         // border-right: 1px solid rgba(242, 242, 242, 1);
          padding: 0 98px;
       }
 
@@ -103,13 +104,5 @@
             }
          }
       }
-   }
-}
-
-.main-container {
-   height: 80vh;
-
-   .main-bg {
-      padding: 24px;
    }
 }
