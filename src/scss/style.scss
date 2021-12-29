@@ -8,30 +8,108 @@
    margin: 0px;
 }
 
+.basic-text-style {
+   font-family: "Barlow", sans-serif;
+   font-weight: 300;
+   color: $simple-text;
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.second-text-style {
+   font-family: "Cinzel", sans-serif;
+   font-weight: 600;
+   color: $primary-text;
+   font-size: 11px;
+   line-height: 160%;
+   cursor: pointer;
+}
 
 .header-container {
+   height: 20vh;
+
    .first-header-wrapper {
       background-color: rgba(17, 17, 19, 1);
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 37px;
+
+      p {
+         cursor: pointer;
+      }
 
       .currency {
          display: flex;
+         align-items: center;
+         justify-content: center;
 
-         .currency-text {
-            font-family: "Barlow", sans-serif;
-            font-weight: 300;
-            color: $simple-text;
-            font-size: 12px;
-            line-height: 16px;
-         }
+         .arrow-down {
+            margin-left: 5px;
+            margin-right: 25px;
+            margin-bottom: 5px;
 
-         .country-text {
-            font-family: "Barlow", sans-serif;
-            font-weight: 300;
-            color: $simple-text;
-            font-size: 12px;
-            line-height: 16px;
+            img {
+               cursor: pointer;
+            }
          }
       }
+   }
+
+   .second-header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(242, 242, 242, 1);
+
+      .logo-wrapper {
+         border-right: 1px solid rgba(242, 242, 242, 1);
+         padding: 17px 50px;
+
+         img {
+            cursor: pointer;
+         }
+      }
+
+      .nav-wrapper {
+         display: flex;
+         align-items: center;
+         gap: 48px;
+         // border-right: 1px solid rgba(242, 242, 242, 1);
+         padding: 0 98px;
+      }
+
+      .menu-wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .menu-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border-left: 1px solid rgba(242, 242, 242, 1);
+            padding: 0 30px;
+
+            img {
+               cursor: pointer;
+            }
+
+            .round {
+               position: absolute;
+               top: 35px;
+               left: 42px;
+            }
+         }
+      }
+   }
+}
+
+.main-container {
+   height: 80vh;
+
+   .main-bg {
+      padding: 24px;
    }
 }
