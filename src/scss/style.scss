@@ -1,11 +1,39 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500;600;700&display=swap');
 
 *, *::before, *::after {
    box-sizing: border-box;
    padding: 0px;
    margin: 0px;
+}
+
+h1 {
+   font-family: "Cinzel", sans-serif;
+   font-size: 48px;
+   line-height: 64px;
+   font-weight: 500;
+   color: $primary-text;
+   text-transform: uppercase;
+}
+
+h2 {
+   font-family: "Cinzel", sans-serif;
+   font-size: 40px;
+   line-height: 56px;
+   font-weight: 500;
+   color: $simple-text;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+h3 {
+   font-family: "Cinzel", sans-serif;
+   font-size: 36px;
+   line-height: 52px;
+   font-weight: 500;
+   color: $primary-text;
+   text-transform: uppercase;
 }
 
 .basic-text-style {
@@ -23,6 +51,69 @@
    font-size: 11px;
    line-height: 160%;
    cursor: pointer;
+}
+
+.basic-button {
+   width: 156px;
+   height: 56px;
+   background-color: rgba(0, 0, 0, 1);
+   border: none;
+   color: $simple-text;
+   font-size: 14px;
+   line-height: 20px;
+   font-family: "Barlow", sans-serif;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.woman-title {
+   font-family: "Cinzel", sans-serif;
+   font-size: 22px;
+   line-height: 32px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.woman-text {
+   font-family: "Barlow", sans-serif;
+   font-size: 16px;
+   line-height: 22px;
+   font-weight: 600;
+   color: rgba(146, 146, 146, 1);
+}
+
+.shop-subtitle {
+   font-family: "Cinzel", sans-serif;
+   font-size: 11px;
+   line-height: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: $simple-text;
+}
+
+.gift-title {
+   font-family: "Barlow", sans-serif;
+   font-size: 16px;
+   line-height: 22px;
+   font-weight: 700;
+   color: $primary-text;
+   text-transform: uppercase;
+}
+
+.gift-subtitle {
+   font-family: "Barlow", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 400;
+   color: $gray-text;
+}
+
+.gift-text {
+   font-family: "Barlow", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+   color: $primary-text;
 }
 
 .header-container {
@@ -103,6 +194,239 @@
                left: 42px;
             }
          }
+      }
+   }
+}
+
+.main-container {
+   background-image: url(../assets/main-bg.png);
+   width: 1392px;
+   height: 648px;
+   margin: 24px;
+
+   .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      padding-left: 107px;
+      padding-top: 126px;
+
+      .sub-title-text {
+         font-size: 16px;
+         line-height: 24px;
+         color: rgba(102, 102, 102, 1);
+         font-weight: 400;
+      }
+
+      .button-wrapper {
+         display: inline-flex;
+         gap: 20px;
+
+         .reverse-button {
+            color: $primary-black;
+            background-color: transparent;
+            border: 1px solid $primary-text;
+         }
+      }
+   }
+}
+
+.slider-bg {
+   display: flex;
+   justify-content: center;
+   gap: 4px;
+   margin-top: 46px;
+
+   .slider-item {
+      width: 40px;
+      height: 2px;
+      background-color: $simple-gray;
+
+      &.active {
+         background-color: $primary-black;
+      }
+   }
+}
+
+.trending-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   align-items: center;
+   margin-top: 65px;
+
+   .trending-title {
+      text-align: center;
+   }
+
+   .trending-menu {
+      display: flex;
+      gap: 33px;
+
+      .select {
+         width: 30px;
+         border-bottom: 1px solid rgba(0, 0, 0, 1);
+      }
+   }
+}
+
+.schwarz-wrapper {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   margin-top: 48px;
+
+   .product {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+}
+
+.shop-container {
+   margin-top: 118px;
+
+   .bra-body-wrapper {
+      display: flex;
+      align-items: center;
+
+      .bra-wrapper {
+         background-image: url(../assets/img-shop-bra.png);
+         width: 720px;
+         height: 720px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 68px;
+
+         .underline {
+            width: 56px;
+            border-bottom: 1px solid $simple-text;
+            cursor: pointer;
+         }
+      }
+
+      .body-wrapper {
+         background-image: url(../assets/img-shop-body.png);
+         width: 720px;
+         height: 720px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 68px;
+
+         .underline {
+            width: 65px;
+            border-bottom: 1px solid $simple-text;
+            cursor: pointer;
+         }
+      }
+   }
+
+   .nightwear-wrapper {
+      background-image: url(../assets/img-shop-nightwear.png);
+      width: 1440px;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 250px;
+
+      .nightwear-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 68px;
+
+         .underline {
+            width: 105px;
+            border-bottom: 1px solid $simple-text;
+            cursor: pointer;
+         }
+      }
+
+      
+   }
+}
+
+.underwear-container {
+   margin-top: 108px;
+   display: flex;
+   flex-direction: column;
+   gap: 38px;
+   align-items: center;
+
+   .underwear-title {
+      margin-right: 820px;
+   }
+
+   .underwear-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      .underwear-item {
+         .woman-text {
+            &::after {
+               content: '69,00€';
+               margin-left: 5px;
+               text-decoration: none;
+               color: rgba(189, 55, 53, 1);
+            }
+         }
+      }
+   }
+}
+
+.wrong-bra-wrapper {
+      background-image: url(../assets/img-wrong-bra.png);
+      width: 1440px;
+      height: 733px;
+      margin-top: 148px;
+}
+
+.gift {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .gift-container {
+      margin-top: 93px;
+   
+      .gift-wrapper {
+         display: flex;
+         justify-content: center;
+         gap: 112px;
+   
+         .gift-element {
+            display: flex;
+            gap: 41px;
+      
+            .gift-description {
+               display: flex;
+               flex-direction: column;
+               gap: 5px;
+   
+               .gift-title {
+                  margin-bottom: 5px;
+               }
+            }
+         }
+      }
+   }
+
+   .almerna-img {
+      margin-top: 122px;
+   }
+
+   .almerna-title {
+      margin-top: 48px;
+
+      .almerna-title-style {
+         color: $almerna-title;
       }
    }
 }
