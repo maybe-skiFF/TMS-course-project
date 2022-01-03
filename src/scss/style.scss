@@ -224,7 +224,7 @@ h3 {
    background-image: url(../assets/main-bg.png);
    width: 1392px;
    height: 648px;
-   margin: 24px;
+   margin: 24px auto;
 
    .main-wrapper {
       display: flex;
@@ -307,10 +307,13 @@ h3 {
 
 .shop-container {
    margin-top: 118px;
+   display: flex;
+   flex-direction: column;
 
    .bra-body-wrapper {
       display: flex;
       align-items: center;
+      margin: 0 auto;
 
       .bra-wrapper {
          background-image: url(../assets/img-shop-bra.png);
@@ -356,6 +359,7 @@ h3 {
       align-items: flex-start;
       justify-content: center;
       padding-left: 250px;
+      margin: 0 auto;
 
       .nightwear-container {
          display: flex;
@@ -408,6 +412,7 @@ h3 {
       width: 1440px;
       height: 733px;
       margin-top: 148px;
+      margin: 148px auto 0 auto;
 }
 
 .gift {
@@ -491,6 +496,7 @@ h3 {
       display: flex;
       justify-content: center;
       gap: 16px;
+      // margin: 0 auto;
 
       .women-slider-img-2-wrapper {
          background-image: url(../assets/img/women-slider-img-2.png);
@@ -611,5 +617,12 @@ h3 {
             cursor: pointer;
          }
       }
+   }
+}
+
+@media only screen and (max-width: 1024px) {
+   .main-container {
+      // width: 1000px;
+      background-image: cover;
    }
 }
